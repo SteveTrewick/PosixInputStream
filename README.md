@@ -35,6 +35,15 @@ stream.cancel {
 }
 ```
 
+## Target queue
+
+PosixInputStream uses its own internal dispatch queue with default priority.
+If you need it to target another queue to keep things tidy, pass that on init like so ...
+
+```
+let stream = PosixInputStream(descriptor: YOUR_FD, targetQueue: YOUR_QUEUE)
+```
+
 ## Dependencies
 
 Depends on [PosixError](https://github.com/SteveTrewick/PosixError), and by association [Trace](https://github.com/SteveTrewick/Trace)

@@ -5,6 +5,8 @@ Wrap a POSIX file descriptor in a GCD read dispatch source so it will call you w
 I'm sure there are nicer ways of going about this but, eh. 
 This is basically a translation of some old code I had knocking around from the Objective C days, works for me.
 
+Useful for serial ports and the like.
+
 ## Usage
 
 
@@ -33,3 +35,6 @@ stream.cancel {
 }
 ```
 
+## Dependencies
+
+Depends on [PosixError](https://github.com/SteveTrewick/PosixError), and by association [Trace](https://github.com/SteveTrewick/Trace)

@@ -1,5 +1,5 @@
 import Foundation
-import PosixError
+@_exported import PosixError
 
 
 public class PosixInputStream {

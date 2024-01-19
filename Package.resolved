@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PosixError",
+        "repositoryURL": "https://github.com/SteveTrewick/PosixError",
+        "state": {
+          "branch": null,
+          "revision": "52d4a4fc42bba1ff9ed238cf04ba4536190d968b",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "Trace",
+        "repositoryURL": "https://github.com/SteveTrewick/Trace",
+        "state": {
+          "branch": null,
+          "revision": "c20fbce6887d4c66bac023cbddab6ce29a7f831a",
+          "version": "1.0.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

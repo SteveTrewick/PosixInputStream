@@ -11,7 +11,8 @@ Useful for serial ports and the like.
 
 
 
-```
+```swift
+
 import PosixInputStream
 
 // ...
@@ -33,6 +34,7 @@ stream.cancel {
   // whatever you want to do when cancel is finished,
   // like cleanly fluch and close your file descriptor.
 }
+
 ```
 
 ## Target queue
@@ -40,8 +42,10 @@ stream.cancel {
 PosixInputStream uses its own internal dispatch queue with default priority.
 If you need it to target another queue to keep things tidy, pass that on init like so ...
 
-```
+```swift
+
 let stream = PosixInputStream(descriptor: YOUR_FD, targetQueue: YOUR_QUEUE)
+
 ```
 
 ## Dependencies

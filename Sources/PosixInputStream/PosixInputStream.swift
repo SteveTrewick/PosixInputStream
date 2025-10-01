@@ -1,6 +1,10 @@
 import Foundation
 @_exported import PosixError
 
+#if canImport(Dispatch)
+import Dispatch
+#endif
+
 
 public class PosixInputStream {
   
